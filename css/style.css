@@ -1,0 +1,73 @@
+/* NEED TO GIVE SOME STYLE TO YOUR SPINNER */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#loader {
+    z-index: 110;
+    display: none;
+    position: absolute;
+    top: calc(50vh - 55px);
+    left: calc(50vw - 55px);
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 80px;
+    height: 80px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1003;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+}
+/*********************************************/
+
+/* You don't care about this, it's just for Mr. & Mrs Button */
+body {
+    background-color: #f3f3f3;
+}
+#close-button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 66px;
+    color: #818181;
+    transition: 0.3s;
+}
+.content {
+    position: absolute;
+    top: calc(50vh - 38px);
+    left: calc(50vw - 100px);
+}
+.content .button {
+    width: 200px;
+    height: 75px;
+    outline: none;
+    font-size: 25px;
+    color: #4d4d4d;
+    border: 1px solid #a6a6a6;
+    border-radius: 10px;
+    background-color: #3498db;
+}
+.content .button:hover {
+    color: #333333;
+    background-color: #2283c3;
+}
+.content .button:active {
+    color: #1a1a1a;
+    background-color: #1b6698;
+}
