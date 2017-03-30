@@ -1,4 +1,5 @@
-/* NEED TO GIVE SOME STYLE TO YOUR SPINNER */
+/* START */
+/* Need to give some style ti your spinner */
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
@@ -32,7 +33,7 @@
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
 }
-/*********************************************/
+/* END */
 
 /* You don't care about this, it's just for Mr. & Mrs Button */
 body {
@@ -64,6 +65,7 @@ body {
     background-color: #3498db;
 }
 .content .button:hover {
+    cursor: pointer;
     color: #333333;
     background-color: #2283c3;
 }
